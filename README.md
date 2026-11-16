@@ -2,6 +2,8 @@
 
 Code, data, results and validation samples for the corpus study reported in §3 of Matthieu Queloz, "Familiar Words, Unfamiliar Minds: Conventionalization without Calibration in the Vocabulary of Mind".
 
+Archived at Zenodo: https://doi.org/10.5281/zenodo.24279389 (version 1.0.0, as cited in the paper); https://doi.org/10.5281/zenodo.24279388 always resolves to the latest version.
+
 Data were harvested on 13 November 2026. Everything here can be re-run from the scripts in this folder.
 
 The figures are numbered differently here and in the paper:
