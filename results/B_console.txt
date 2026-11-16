@@ -1,0 +1,136 @@
+abstracts per year: {2015: 832, 2016: 1692, 2017: 2364, 2018: 2795, 2019: 2940, 2020: 3000, 2021: 3000, 2022: 3000, 2023: 3000, 2024: 3000, 2025: 3000, 2026: 2500}
+
+subject classes per verb (all years):
+class        human  method  model  named  none  other  pronoun
+lemma                                                         
+believe        294       0      7      0     0     13        9
+generate       519     585   1616    367   637    648      313
+hallucinate      0       0     24      2     6      2       13
+know           125       2     37      2    14     21       39
+learn          501     488   1607    250   386    436      290
+predict        185     124    582     81   334    418      122
+reason          26      22    148     15    67     20       45
+think           28       1     21      1    19      5       24
+understand     430      39    232     21   250    243      183
+
+== baseline (generate, predict)
+ year  verb_tokens  artificial  human  artificial_share    lo    hi  artificial_per_1000_abstracts
+ 2015          124          42     16             0.724 0.598 0.822                         50.481
+ 2016          266          97     37             0.724 0.643 0.793                         57.329
+ 2017          407         153     47             0.765 0.702 0.818                         64.721
+ 2018          582         228     67             0.773 0.722 0.817                         81.574
+ 2019          613         223     75             0.748 0.696 0.794                         75.850
+ 2020          701         270     84             0.763 0.716 0.804                         90.000
+ 2021          648         244     81             0.751 0.701 0.795                         81.333
+ 2022          666         240     75             0.762 0.712 0.806                         80.000
+ 2023          758         331     85             0.796 0.754 0.832                        110.333
+ 2024          681         308     68             0.819 0.777 0.855                        102.667
+ 2025          607         279     37             0.883 0.843 0.914                         93.000
+ 2026          478         231     32             0.878 0.833 0.912                         92.400
+
+== contested (understand, know, believe, think, reason)
+ year  verb_tokens  artificial  human  artificial_share    lo    hi  artificial_per_1000_abstracts
+ 2015           59           7     22             0.241 0.122 0.421                          8.413
+ 2016           90          22     35             0.386 0.271 0.516                         13.002
+ 2017          164          31     70             0.307 0.225 0.403                         13.113
+ 2018          187          25     84             0.229 0.160 0.317                          8.945
+ 2019          223          36     92             0.281 0.211 0.365                         12.245
+ 2020          252          31    126             0.197 0.143 0.267                         10.333
+ 2021          249          35     97             0.265 0.197 0.346                         11.667
+ 2022          285          55    105             0.344 0.275 0.420                         18.333
+ 2023          263          50    109             0.314 0.247 0.390                         16.667
+ 2024          233          51     72             0.415 0.331 0.503                         17.000
+ 2025          238          75     56             0.573 0.487 0.654                         25.000
+ 2026          160          66     35             0.653 0.557 0.739                         26.400
+
+== hallucinate
+ year  verb_tokens  artificial  human  artificial_share    lo  hi  artificial_per_1000_abstracts
+ 2018            1           1      0               1.0 0.207 1.0                          0.358
+ 2019            1           1      0               1.0 0.207 1.0                          0.340
+ 2020            3           1      0               1.0 0.207 1.0                          0.333
+ 2021            4           3      0               1.0 0.438 1.0                          1.000
+ 2022            2           0      0               NaN   NaN NaN                          0.000
+ 2023            5           4      0               1.0 0.510 1.0                          1.333
+ 2024           12           5      0               1.0 0.566 1.0                          1.667
+ 2025           11           7      0               1.0 0.646 1.0                          2.333
+ 2026            8           4      0               1.0 0.510 1.0                          1.600
+
+== learn
+ year  verb_tokens  artificial  human  artificial_share    lo    hi  artificial_per_1000_abstracts
+ 2015          120          44     19             0.698 0.576 0.798                         52.885
+ 2016          268         102     42             0.708 0.629 0.776                         60.284
+ 2017          430         206     62             0.769 0.715 0.815                         87.140
+ 2018          480         237     56             0.809 0.760 0.850                         84.794
+ 2019          519         241     72             0.770 0.720 0.813                         81.973
+ 2020          459         195     53             0.786 0.731 0.833                         65.000
+ 2021          430         210     56             0.789 0.737 0.834                         70.000
+ 2022          435         196     69             0.740 0.684 0.789                         65.333
+ 2023          311         140     36             0.795 0.730 0.848                         46.667
+ 2024          198          95     17             0.848 0.770 0.903                         31.667
+ 2025          158          94     12             0.887 0.812 0.934                         31.333
+ 2026          150          97      7             0.933 0.868 0.967                         38.800
+
+per verb, pooled periods: artificial share [n resolved]
+period          2015-19    2020-22    2023-24    2025-26
+lemma                                                   
+believe        2% [112]    0% [92]    4% [72]    8% [25]
+generate      75% [645]  75% [733]  82% [636]  88% [488]
+hallucinate    100% [2]   100% [4]   100% [9]  100% [11]
+know           14% [56]   20% [69]   38% [21]   50% [18]
+learn        77% [1081]  77% [779]  82% [288]  91% [210]
+predict       76% [340]  79% [261]  76% [156]   90% [91]
+reason         84% [43]   72% [40]   87% [30]   95% [76]
+think          11% [18]     0% [5]    43% [7]   85% [20]
+understand    37% [195]  32% [243]  40% [152]   44% [93]
+logit artificial ~ year [baseline (generate, predict)]: OR/year = 1.085  95% CI [1.055, 1.116]  p = 1.3e-08  n = 3350
+logit artificial ~ year [contested (understand, know, believe, think, reason)]: OR/year = 1.157  95% CI [1.112, 1.204]  p = 3.6e-13  n = 1387
+logit artificial ~ year [learn]: OR/year = 1.078  95% CI [1.040, 1.118]  p = 4e-05  n = 2358
+interaction year x contested (vs baseline): ratio of ORs = 1.067  95% CI [1.016, 1.119]  p = 0.009
+
+framing of model-subject uses of contested verbs:
+stance   intensified  negated  plain  questioned  scare-quoted    n  intensified_share  negated_share  plain_share  questioned_share  scare-quoted_share
+period                                                                                                                                                  
+2015-19            5        2    110           3             1  121              0.041          0.017        0.909             0.025               0.008
+2020-22            3        8    102           4             4  121              0.025          0.066        0.843             0.033               0.033
+2023-24            1        5     84           9             2  101              0.010          0.050        0.832             0.089               0.020
+2025-26            2        9    110          14             6  141              0.014          0.064        0.780             0.099               0.043
+
+scare-quoted cognitive words (single quoted word), whole sample:
+      tokens  quoted  quoted_per_10k_tokens  quoted_per_1000_abstracts
+year                                                                  
+2015    1146       1                   8.73                       1.20
+2016    2337       3                  12.84                       1.77
+2017    3492       0                   0.00                       0.00
+2018    4209       2                   4.75                       0.72
+2019    4871       2                   4.11                       0.68
+2020    5068       8                  15.79                       2.67
+2021    5305       2                   3.77                       0.67
+2022    5708       9                  15.77                       3.00
+2023    5854       5                   8.54                       1.67
+2024    5814       9                  15.48                       3.00
+2025    7078       7                   9.89                       2.33
+2026    5512       6                  10.89                       2.40
+stem
+reason        10
+know           9
+memor          9
+think          9
+understand     9
+intelligen     4
+learn          3
+believe        1
+
+search-index check (cs.CL abstracts containing hallucinat*, per 1,000):
+      sample_rate_per_1000  api_rate_per_1000
+2015                   0.0                0.0
+2016                   0.6                0.6
+2017                   0.4                0.4
+2018                   0.4                0.3
+2019                   1.4                1.7
+2020                   2.3                2.4
+2021                   4.7                5.3
+2022                   7.0                8.0
+2023                  22.3               28.4
+2024                  48.3               49.8
+2025                  56.7               53.3
+2026                  52.4               44.8

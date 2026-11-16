@@ -1,0 +1,25 @@
+hallucin 2009: api=1 fetched=1
+hallucin 2013: api=1 fetched=1
+hallucin 2014: api=3 fetched=3
+hallucin 2015: api=1 fetched=1
+hallucin 2016: api=13 fetched=13
+hallucin 2017: api=18 fetched=18
+hallucin 2018: api=43 fetched=43
+hallucin 2019: api=53 fetched=53
+hallucin 2020: api=62 fetched=62
+hallucin 2021: api=103 fetched=103
+hallucin 2022: api=129 fetched=129
+hallucin 2023: api=556 fetched=556
+hallucin 2024: api=1610 fetched=1610
+hallucin 2025: api=2639 fetched=2639
+hallucin 2026: api=3337 fetched=3337
+== hallucin: 8569 unique records (API reported 8569)
+confab 2012: api=1 fetched=1
+confab 2017: api=1 fetched=1
+confab 2018: api=1 fetched=1
+confab 2019: api=1 fetched=1
+confab 2023: api=3 fetched=3
+confab 2024: api=8 fetched=8
+confab 2025: api=20 fetched=20
+confab 2026: api=62 fetched=62
+== confab: 97 unique records (API reported 97)

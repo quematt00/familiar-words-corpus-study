@@ -1,0 +1,8 @@
+# The environment of the original run (13 November 2026) was not recorded, so
+# versions are not pinned. The figure script was re-run on 16 November 2026
+# with Python 3.9.6, pandas 2.2.3, numpy 2.0.2 and matplotlib 3.9.4.
+pandas
+numpy
+matplotlib
+statsmodels
+spacy[transformers]
