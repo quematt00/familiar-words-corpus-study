@@ -1,0 +1,8 @@
+{
+  "title": "Corpus study of 'hallucinate' and cognitive verbs applied to AI systems, 2015-2026",
+  "upload_type": "dataset",
+  "description": "<p>Code, data, results tables, validation samples and figures for the corpus study reported in section 3 of Matthieu Queloz, 'Familiar Words, Unfamiliar Minds: Conventionalization without Calibration in the Vocabulary of Mind'.</p><p>The study traces the word <em>hallucinate</em> in 8,568 arXiv abstracts and 31,866 Hacker News comments, and the subjects of five cognitive verbs in a sample of 31,123 abstracts in computational linguistics. Hacker News comment texts are not redistributed; comment IDs and derived annotations are. Code is under the MIT licence; results, figures and documentation under CC BY 4.0; arXiv metadata is CC0.</p>",
+  "creators": [{"name": "Queloz, Matthieu"}],
+  "license": "cc-by-4.0",
+  "keywords": ["semantic change", "conventionalization", "hallucination", "large language models", "corpus linguistics", "metaphor"]
+}
